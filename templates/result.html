@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection - Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e2124; /* Blackish-blue background color */
+            color: #fff; /* White text color */
+            text-align: center;
+        }
+
+        h1 {
+            padding: 30px 0;
+        }
+
+        h2, p {
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 80vh;
+            border: 2px solid #3c6df0; /* Border color */
+            border-radius: 8px; /* Border radius */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Optional: Box shadow */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Object Detection Result Page</h1>
+
+    <h2>Detection Result</h2>
+    <img src="{{ url_for('static', filename='result/' + filename) }}" alt="Detected Objects">
+</body>
+</html>
